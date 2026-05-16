@@ -2,11 +2,12 @@
 
 package alumnos_centro; 
 public class Alumno {
-    private int id_alumno; 
-    private String nombre; 
-    private int edad; 
-    private String genero; // "Hombre" o "Mujer"
-    private boolean generoMasculino; 
+    public int id_alumno; 
+    public String nombre; 
+    public int edad; 
+    public String genero; // "Hombre" o "Mujer"
+    public boolean generoMasculino; 
+    
     // Constructor de la Clase Alumno 
     public Alumno(int id_alumno, String nombre, int edad, String genero){ 
         this.id_alumno = id_alumno;
@@ -14,11 +15,8 @@ public class Alumno {
         this.edad = edad; 
         this.genero = genero; 
 
-        //Calcular automáticamente el valor booleano a partir del String genero 
-            if (genero.equalsIgnoreCase("Hombre")){ 
-                        this.generoMasculino = true;
-            } else { this.generoMasculino = false; 
-            } 
+        //Calcular automáticamente el valor booleano a partir del String genero
+        this.generoMasculino = genero.equalsIgnoreCase("Hombre"); 
         }
         
         // Getters 
