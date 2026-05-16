@@ -55,3 +55,23 @@ for i in range(0, 101, 5):  # Itera desde 0 hasta 100 con un paso de 5
 # Imprime la lista numeros_2 con los múltiplos de 5 insertados y ordenados
 numeros_2.sort()
 print(numeros_2)
+
+lista_pares = []  # Crea una lista vacía
+for i in range(0, 81, 2):
+    lista_pares.append(i)  # Agrega los números pares del 0 al 80 a la lista vacía
+print(lista_pares)  # Imprime la lista vacía con los números pares
+
+lista_impares = []  # Crea otra lista vacía
+for i in range(1, 81,2):
+    lista_impares.append(i)  # Agrega los números impares del 1 al 80 a la lista vacía
+print(lista_impares)  # Imprime la lista vacía con los números impares
+
+lista_multiplos_de_3 = []  # Crea otra lista vacía
+for i in range(0, 81, 3):
+    lista_multiplos_de_3.append(i)  # Agrega los números múltiplos de 3 del 0 al 80 a la lista vacía
+print(lista_multiplos_de_3)  # Imprime la lista vacía con los números múltiplos de 3
+
+lista__multiplos_de_9 = []  # Crea otra lista vacía
+for i in range(0, 181, 9):   
+    lista__multiplos_de_9.append(i)  # Agrega los números múltiplos de 9 del 0 al 81 
+print(lista__multiplos_de_9)  # Imprime la lista vacía con los números múltiplos de 9
